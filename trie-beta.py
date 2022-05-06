@@ -59,4 +59,4 @@ class Trie:
 trie = Trie()
 trie.insert("somestring")
 trie.search("key")
-print(trie.search("key"))
+print(trie.search("key", "somestring"))
