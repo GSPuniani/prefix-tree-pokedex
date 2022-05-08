@@ -42,7 +42,7 @@ class PrefixTree:
     def contains(self, string):
         """Return True if this prefix tree contains the given string."""
         # DONE
-        # Time complexity: O(n), where n is the size of the string, since the entire string... 
+        # Time complexity: O(n), where n is the size of the string, since the entire string...
         # ...must be traversed in the worst-case
         # Set Prefix Tree node pointer to first character
         pt_node = self.root.children[string[0]]
@@ -59,7 +59,7 @@ class PrefixTree:
     def insert(self, string):
         """Insert the given string into this prefix tree."""
         # DONE
-        # Time complexity: O(n), where n is the size of the string, since the entire string... 
+        # Time complexity: O(n), where n is the size of the string, since the entire string...
         # ...must be traversed/added in the worst-case (adding adds additional but negligible constant time)
         pt_node = self.root
         # Iterate through each character of input string
@@ -80,7 +80,7 @@ class PrefixTree:
         matches the longest prefix of the given string and the node's depth.
         The depth returned is equal to the number of prefix characters matched.
         Search is done iteratively with a loop starting from the root node."""
-        # Time complexity: O(n), where n is the size of the string, since the entire string... 
+        # Time complexity: O(n), where n is the size of the string, since the entire string...
         # ...must be traversed in the worst-case
         # Match the empty string
         if len(string) == 0:
