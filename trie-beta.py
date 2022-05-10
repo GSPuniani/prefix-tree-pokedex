@@ -55,11 +55,5 @@ class Trie:
         return True
 
 
-# Your Trie object will be instantiated and called as such:
-trie = Trie()
-trie.insert("charmander")
-trie.search("charmander")
-trie.search("charmen")
-trie.search("charmen")
-trie.search("charmen")
-# print(trie.search("key", "somestring"))
+["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
+[[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
