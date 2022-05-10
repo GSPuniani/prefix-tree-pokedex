@@ -180,23 +180,9 @@ def create_prefix_tree(strings):
 
 
 def main():
-    # Simpe test case of string with partial substring overlaps
-    strings = ['ABC', 'ABD', 'A', 'XYZ']
+    # Simpe test case of string with Pokemon names
+    strings = ['charmander', 'charmeleon', 'charizard', 'pikachu']
     create_prefix_tree(strings)
-
-    # Create a dictionary of tongue-twisters with similar words to test with
-    tongue_twisters = {
-        'Seashells': 'Shelly sells seashells by the sea shore'.split(),
-        # 'Peppers': 'Peter Piper picked a peck of pickled peppers'.split(),
-        # 'Woodchuck': ('How much wood would a wood chuck chuck'
-        #                ' if a wood chuck could chuck wood').split()
-    }
-    # Create a prefix tree with the similar words in each tongue-twister
-    for name, strings in tongue_twisters.items():
-        print(f'{name} tongue-twister:')
-        create_prefix_tree(strings)
-        if len(tongue_twisters) > 1:
-            print('\n' + '='*80 + '\n')
 
 
 if __name__ == '__main__':
