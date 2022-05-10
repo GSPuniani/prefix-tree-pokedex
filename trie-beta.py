@@ -57,6 +57,9 @@ class Trie:
 
 # Your Trie object will be instantiated and called as such:
 trie = Trie()
-trie.insert("somestring")
-trie.search("key")
-print(trie.search("key", "somestring"))
+trie.insert("charmander")
+trie.search("charmander")
+trie.search("charmen")
+trie.search("charmen")
+trie.search("charmen")
+# print(trie.search("key", "somestring"))

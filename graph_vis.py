@@ -23,3 +23,7 @@ plt.title('draw_networkx')
 plt.savefig("filename4.png")
 
 
+# drawing in spectral layout
+nx.draw(g, with_labels=True)
+# plt.savefig("filename4.png")
+plt.savefig("test1.png")
