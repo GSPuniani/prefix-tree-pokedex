@@ -53,7 +53,3 @@ class Trie:
                 return False
             node = node.children[char]
         return True
-
-
-["Trie", "insert", "search", "search", "startsWith", "insert", "search"]
-[[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
