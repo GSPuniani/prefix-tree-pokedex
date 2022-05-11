@@ -55,7 +55,7 @@ def visit(node, parent=None):
             if parent:
                 # print("draw parent k", parent, k)
                 draw(parent, k)
-            print("visit v k", v, k)
+            # print("visit v k", v, k)
             visit(v, k)
         else:
             # Draw the label using a distinct name by appending the counter
