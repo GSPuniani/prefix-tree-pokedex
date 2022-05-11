@@ -1,8 +1,9 @@
 import json
 import pydot
 
-# function to return a new dict template
+
 def struct():
+    """Return a dictionary structure with a Boolean flag for terminal nodes"""
     struct = {
         'is_terminal': 'False'
     }
@@ -48,14 +49,21 @@ def visit(node, parent=None):
     for k,v in node.items():
         if isinstance(v, dict):
             # We start with the root node whose parent is None
+            # print("k before", k)
             k = k + '_' + str(counter)
+            # print("k after", k)
             if parent:
+                # print("draw parent k", parent, k)
                 draw(parent, k)
+            print("visit v k", v, k)
             visit(v, k)
         else:
             # Draw the label using a distinct name by appending the counter
             v = v + '_' + str(counter)
-            draw(parent, v)
+            # print("draw parent v", parent, v)
+            # Draw only if the child is not a False label
+            if "False" not in v:
+                draw(parent, v)
 
 # Create instance of PyDot digraph for tree structure
 graph = pydot.Dot(graph_type='digraph')
