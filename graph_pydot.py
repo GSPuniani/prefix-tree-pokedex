@@ -39,11 +39,9 @@ counter = 0
 def draw(parent_name, child_name):
     global counter
     counter += 1
-    p_n = parent_name
-    c_n = child_name
-    graph.add_node(pydot.Node(p_n, label=parent_name.split('_')[0]))
-    graph.add_node(pydot.Node(c_n, label=child_name.split('_')[0]))
-    edge = pydot.Edge(p_n, c_n)
+    graph.add_node(pydot.Node(parent_name, label=parent_name.split('_')[0]))
+    graph.add_node(pydot.Node(child_name, label=child_name.split('_')[0]))
+    edge = pydot.Edge(parent_name, child_name)
     graph.add_edge(edge)
 
 def visit(node, parent=None):
