@@ -26,7 +26,6 @@ for c in file_text:
     elif c == '\n':
         tmp_s['iw'] = 'True'
         tmp_s = root
-        cur_word = []
 
 # saving the trie in a json file
 with open('output.json', 'w') as fp:
