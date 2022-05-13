@@ -1,13 +1,16 @@
-#imports
+# imports
 import json
 import pydot
 
 # function to return a new dict template
+
+
 def struct():
     struct = {
         'iw': 'False'
     }
     return struct
+
 
 # getting list of words as input from the file
 file_ = open('./input.txt', 'r')
@@ -36,6 +39,8 @@ with open('output.json', 'w') as fp:
 # // code taken and modified from stackoverflow (https://stackoverflow.com/questions/13688410/dictionary-object-to-decision-tree-in-pydot)
 rt = {'root': root}
 counter = 0
+
+
 def draw(parent_name, child_name):
     global counter
     counter += 1
@@ -44,9 +49,10 @@ def draw(parent_name, child_name):
     edge = pydot.Edge(parent_name, child_name)
     graph.add_edge(edge)
 
+
 def visit(node, parent=None):
     global counter
-    for k,v in node.items():
+    for k, v in node.items():
         if isinstance(v, dict):
             # We start with the root node whose parent is None
             # we don't want to graph the None node
@@ -58,6 +64,7 @@ def visit(node, parent=None):
             # drawing the label using a distinct name
             v = v + '_' + str(counter)
             draw(parent, v)
+
 
 graph = pydot.Dot(graph_type='digraph')
 visit(rt)
