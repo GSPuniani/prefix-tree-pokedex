@@ -1,40 +1,40 @@
 {
-    "iw": "False",
+    "is_terminal": "False",
     "c": {
-        "iw": "False",
+        "is_terminal": "False",
         "h": {
-            "iw": "False",
+            "is_terminal": "False",
             "a": {
-                "iw": "False",
+                "is_terminal": "False",
                 "r": {
-                    "iw": "False",
+                    "is_terminal": "False",
                     "m": {
-                        "iw": "False",
+                        "is_terminal": "False",
                         "a": {
-                            "iw": "False",
+                            "is_terminal": "False",
                             "n": {
-                                "iw": "False",
+                                "is_terminal": "False",
                                 "d": {
-                                    "iw": "False",
+                                    "is_terminal": "False",
                                     "e": {
-                                        "iw": "False",
+                                        "is_terminal": "False",
                                         "r": {
-                                            "iw": "True"
+                                            "is_terminal": "True"
                                         }
                                     }
                                 }
                             }
                         },
                         "e": {
-                            "iw": "False",
+                            "is_terminal": "False",
                             "l": {
-                                "iw": "False",
+                                "is_terminal": "False",
                                 "e": {
-                                    "iw": "False",
+                                    "is_terminal": "False",
                                     "o": {
-                                        "iw": "False",
+                                        "is_terminal": "False",
                                         "n": {
-                                            "iw": "True"
+                                            "is_terminal": "True"
                                         }
                                     }
                                 }
@@ -42,15 +42,15 @@
                         }
                     },
                     "i": {
-                        "iw": "False",
+                        "is_terminal": "False",
                         "z": {
-                            "iw": "False",
+                            "is_terminal": "False",
                             "a": {
-                                "iw": "False",
+                                "is_terminal": "False",
                                 "r": {
-                                    "iw": "False",
+                                    "is_terminal": "False",
                                     "d": {
-                                        "iw": "True"
+                                        "is_terminal": "True"
                                     }
                                 }
                             }
@@ -61,19 +61,94 @@
         }
     },
     "p": {
-        "iw": "False",
+        "is_terminal": "False",
         "i": {
-            "iw": "False",
+            "is_terminal": "False",
             "k": {
-                "iw": "False",
+                "is_terminal": "False",
                 "a": {
-                    "iw": "False",
+                    "is_terminal": "False",
                     "c": {
-                        "iw": "False",
+                        "is_terminal": "False",
                         "h": {
-                            "iw": "False",
+                            "is_terminal": "False",
                             "u": {
-                                "iw": "False"
+                                "is_terminal": "True"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "m": {
+        "is_terminal": "False",
+        "e": {
+            "is_terminal": "False",
+            "w": {
+                "is_terminal": "True",
+                "t": {
+                    "is_terminal": "False",
+                    "w": {
+                        "is_terminal": "False",
+                        "o": {
+                            "is_terminal": "True"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "r": {
+        "is_terminal": "False",
+        "a": {
+            "is_terminal": "False",
+            "i": {
+                "is_terminal": "False",
+                "c": {
+                    "is_terminal": "False",
+                    "h": {
+                        "is_terminal": "False",
+                        "u": {
+                            "is_terminal": "True"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "s": {
+        "is_terminal": "False",
+        "a": {
+            "is_terminal": "False",
+            "n": {
+                "is_terminal": "False",
+                "d": {
+                    "is_terminal": "False",
+                    "s": {
+                        "is_terminal": "False",
+                        "h": {
+                            "is_terminal": "False",
+                            "r": {
+                                "is_terminal": "False",
+                                "e": {
+                                    "is_terminal": "False",
+                                    "w": {
+                                        "is_terminal": "True"
+                                    }
+                                }
+                            }
+                        },
+                        "l": {
+                            "is_terminal": "False",
+                            "a": {
+                                "is_terminal": "False",
+                                "s": {
+                                    "is_terminal": "False",
+                                    "h": {
+                                        "is_terminal": "True"
+                                    }
+                                }
                             }
                         }
                     }

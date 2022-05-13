@@ -1,49 +1,60 @@
+<<<<<<< HEAD
 # imports
 import json
 import pydot
 
 # function to return a new dict template
 
+=======
+import json
+import pydot
+
+>>>>>>> 678cde41fba4a8b39dcb084008a002f79fad73b2
 
 def struct():
+    """Return a dictionary structure with a Boolean flag for terminal nodes"""
     struct = {
-        'iw': 'False'
+        'is_terminal': 'False'
     }
     return struct
 
+<<<<<<< HEAD
 
 # getting list of words as input from the file
+=======
+# Retrieve list of words from the input file
+>>>>>>> 678cde41fba4a8b39dcb084008a002f79fad73b2
 file_ = open('./input.txt', 'r')
 file_text = file_.read()
 file_len = len(file_text)
 file_.close()
 
-# trie making stuff happening (hard to explain)
-tmp_s = struct()
-root = tmp_s
-for c in file_text:
-    if c != '\n':
-        if c not in tmp_s:
-            tmp_s[c] = struct()
-        tmp_s = tmp_s[c]
-    elif c == '\n':
-        tmp_s['iw'] = 'True'
-        tmp_s = root
-        cur_word = []
+# Iterate through nested dictionaries to produce trie
+node_dict = struct()
+root = node_dict
+for char in file_text:
+    if char != '\n':
+        if char not in node_dict:
+            node_dict[char] = struct()
+        node_dict = node_dict[char]
+    elif char == '\n':
+        node_dict['is_terminal'] = 'True'
+        node_dict = root
 
-# saving the trie in a json file
-with open('output.json', 'w') as fp:
-    json.dump(root, fp, indent=4)
+# Save the trie into JSON format
+with open('output.json', 'w') as json_file:
+    json.dump(root, json_file, indent=4)
 
-# converting and saving the trie to dot language decision tree graph using pydot
-# // code taken and modified from stackoverflow (https://stackoverflow.com/questions/13688410/dictionary-object-to-decision-tree-in-pydot)
-rt = {'root': root}
+# Convert and save the trie to decision tree graph using PyDot
+# Code inspiration: https://stackoverflow.com/questions/13688410/dictionary-object-to-decision-tree-in-pydot
+root_dict = {'root': root}
 counter = 0
 
 
 def draw(parent_name, child_name):
     global counter
     counter += 1
+    # Strip the underscore and counter from each label for display purposes
     graph.add_node(pydot.Node(parent_name, label=parent_name.split('_')[0]))
     graph.add_node(pydot.Node(child_name, label=child_name.split('_')[0]))
     edge = pydot.Edge(parent_name, child_name)
@@ -55,17 +66,32 @@ def visit(node, parent=None):
     for k, v in node.items():
         if isinstance(v, dict):
             # We start with the root node whose parent is None
-            # we don't want to graph the None node
+            # print("k before", k)
             k = k + '_' + str(counter)
+            # print("k after", k)
             if parent:
+                # print("draw parent k", parent, k)
                 draw(parent, k)
+            # print("visit v k", v, k)
             visit(v, k)
         else:
-            # drawing the label using a distinct name
+            # Draw the label using a distinct name by appending the counter
             v = v + '_' + str(counter)
-            draw(parent, v)
+            # print("draw parent v", parent, v)
+            # Draw only if the child is not a False label
+            if "False" not in v:
+                draw(parent, v)
 
+<<<<<<< HEAD
 
 graph = pydot.Dot(graph_type='digraph')
 visit(rt)
 graph.write_png('output.png')
+=======
+# Create instance of PyDot digraph for tree structure
+graph = pydot.Dot(graph_type='digraph')
+# Run recursive visit function beginning at root node
+visit(root_dict)
+# Produce output in a png file
+graph.write_png('output.png')
+>>>>>>> 678cde41fba4a8b39dcb084008a002f79fad73b2
