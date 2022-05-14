@@ -73,4 +73,4 @@ graph = pydot.Dot(graph_type='digraph')
 # Run recursive visit function beginning at root node
 visit(root_dict)
 # Produce output in a png file
-graph.write_png('output.png')
+graph.write_png('output_images/output.png')
