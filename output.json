@@ -64,17 +64,29 @@
         "is_terminal": "False",
         "i": {
             "is_terminal": "False",
-            "k": {
+            "d": {
                 "is_terminal": "False",
-                "a": {
+                "g": {
                     "is_terminal": "False",
-                    "c": {
+                    "e": {
                         "is_terminal": "False",
-                        "h": {
+                        "o": {
                             "is_terminal": "False",
-                            "u": {
-                                "is_terminal": "True"
+                            "t": {
+                                "is_terminal": "False",
+                                "t": {
+                                    "is_terminal": "False",
+                                    "o": {
+                                        "is_terminal": "True"
+                                    }
+                                },
+                                " ": {
+                                    "is_terminal": "True"
+                                }
                             }
+                        },
+                        "y": {
+                            "is_terminal": "True"
                         }
                     }
                 }
@@ -93,63 +105,6 @@
                         "is_terminal": "False",
                         "o": {
                             "is_terminal": "True"
-                        }
-                    }
-                }
-            }
-        }
-    },
-    "r": {
-        "is_terminal": "False",
-        "a": {
-            "is_terminal": "False",
-            "i": {
-                "is_terminal": "False",
-                "c": {
-                    "is_terminal": "False",
-                    "h": {
-                        "is_terminal": "False",
-                        "u": {
-                            "is_terminal": "True"
-                        }
-                    }
-                }
-            }
-        }
-    },
-    "s": {
-        "is_terminal": "False",
-        "a": {
-            "is_terminal": "False",
-            "n": {
-                "is_terminal": "False",
-                "d": {
-                    "is_terminal": "False",
-                    "s": {
-                        "is_terminal": "False",
-                        "h": {
-                            "is_terminal": "False",
-                            "r": {
-                                "is_terminal": "False",
-                                "e": {
-                                    "is_terminal": "False",
-                                    "w": {
-                                        "is_terminal": "True"
-                                    }
-                                }
-                            }
-                        },
-                        "l": {
-                            "is_terminal": "False",
-                            "a": {
-                                "is_terminal": "False",
-                                "s": {
-                                    "is_terminal": "False",
-                                    "h": {
-                                        "is_terminal": "True"
-                                    }
-                                }
-                            }
                         }
                     }
                 }

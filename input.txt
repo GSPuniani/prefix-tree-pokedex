@@ -1,9 +1,8 @@
 charmander
 charmeleon
 charizard
-pikachu
-mewtwo
-raichu
-sandshrew
-sandslash
+pidgeotto
+pidgey
+pidgeot 
 mew
+mewtwo

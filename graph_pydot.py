@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-# imports
 import json
 import pydot
 
-# function to return a new dict template
-
-=======
-import json
-import pydot
-
->>>>>>> 678cde41fba4a8b39dcb084008a002f79fad73b2
 
 def struct():
     """Return a dictionary structure with a Boolean flag for terminal nodes"""
@@ -18,12 +9,7 @@ def struct():
     }
     return struct
 
-<<<<<<< HEAD
-
-# getting list of words as input from the file
-=======
 # Retrieve list of words from the input file
->>>>>>> 678cde41fba4a8b39dcb084008a002f79fad73b2
 file_ = open('./input.txt', 'r')
 file_text = file_.read()
 file_len = len(file_text)
@@ -82,16 +68,9 @@ def visit(node, parent=None):
             if "False" not in v:
                 draw(parent, v)
 
-<<<<<<< HEAD
-
-graph = pydot.Dot(graph_type='digraph')
-visit(rt)
-graph.write_png('output.png')
-=======
 # Create instance of PyDot digraph for tree structure
 graph = pydot.Dot(graph_type='digraph')
 # Run recursive visit function beginning at root node
 visit(root_dict)
 # Produce output in a png file
 graph.write_png('output.png')
->>>>>>> 678cde41fba4a8b39dcb084008a002f79fad73b2
