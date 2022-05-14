@@ -1,4 +1,4 @@
-# prefix-tree-pokedex
+# Prefix Tree Pokédex
 
 ## About
 
